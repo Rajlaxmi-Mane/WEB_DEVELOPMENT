@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipcart_Login</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            width: 100%;
+            height: 100vh;
+            border: 0.0px solid transparent;
+        }
+
+        .head {
+            width: 100%;
+            height: 55px;
+            border: 1px solid transparent;
+        }
+
+        #head1 {
+            background-color: #2874f0;
+        }
+
+        .inner {
+            display: inline-block;
+            height: 53px;
+            vertical-align: top;
+            color: #fff;
+            padding: 5px 10px;
+            margin-left: 5px;
+            border: 1px solid transparent;
+            outline: none;
+        }
+         .inner:hover{
+            cursor: pointer;
+         }
+        .fk {
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .fk1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .ep {
+            display: inline-block;
+            font-size: 13px;
+            font-style: italic;
+        }
+
+        #ep1 {
+            color: yellow;
+        }
+
+        .title {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #inner1 {
+            margin-left: 190px;
+            line-height: normal;
+        }
+
+        .search {
+            height: 40px;
+            width: 450px;
+            border-radius: 2px;
+            outline: none;
+            border: none;
+            box-shadow: 0px 0px 2px white;
+        }
+
+        .search::placeholder {
+            padding-left: 10px;
+        }
+         .icon{
+            height: 25px;
+            width: 25px;
+            vertical-align: middle;
+            outline: none;
+            margin-left: -35px;
+         }
+        #login {
+            text-align: center;
+            height: 38px;
+            width: 120px;
+            margin-top: 2px;
+            padding: 7px;
+            border: 1px solid;
+            color: #2874f0;
+            background-color: #fff;
+            border-radius: 3px;
+            box-shadow: 0px 0px 2px;
+        }
+
+        .im {
+            height: 15px;
+            width: 15px;
+            margin-top: 12px;
+            display: inline-block;
+        }
+
+        #cart {
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        #head2 {
+            height: 40px;
+            background-color: #fff;
+            box-shadow: 0px 1px 0px;
+        }
+         .dropd{
+            height:40px;
+            border: 1px solid transparent;
+            text-align: center;
+            margin-left: 40px;
+            text-shadow: 0px 0px 1px #878787;
+            cursor: pointer;
+         }
+         .title1{
+            color: black;
+            display: inline-block;
+         }
+        .mid {
+            background-color: #f1f3f6;
+            border: 1px solid transparent;
+        }
+
+        .main {
+            height: 520px;
+            width: 850px;
+            border: 0.0px solid #fff;
+            margin: 18px auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 1px;
+        }
+
+        .sub {
+            background-clip: border-box;
+            height: 520px;
+            display: inline-block;
+        }
+
+        #sub1 {
+            width: 349px;
+            background-color: #2874f0;
+            border: 0.0px solid #2874f0;
+        }
+
+        .insub {
+            height: 420px;
+            width: 249px;
+            margin: 50px;
+        }
+
+        .log {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 550;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .txt {
+            padding: 15px 0px;
+            color: #dbdbdb;
+            font-size: 19px;
+            line-height: 30px;
+        }
+
+        .img {
+            margin-top: 190px;
+            margin-left: 15px;
+        }
+
+        #sub2 {
+            margin-left: -4px;
+            width: 499px;
+            vertical-align: top;
+        }
+
+        .insub2 {
+            height: 450px;
+            width: 429px;
+            margin: 50px 35px;
+        }
+
+        .input {
+            width: 429px;
+            height: 40px;
+            border: none;
+            outline: none;
+        }
+
+        .input1 {
+            border-bottom: 1px solid;
+            margin: 18px 1px;
+        }
+
+        .input1:hover {
+            box-shadow: 0px 1.5px 0px #2874f0;
+            border: none;
+        }
+        .input1::placeholder {
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        .anch {
+            color: #2874f0;
+            text-decoration: none;
+        }
+
+        .sub2txt {
+            font-size: 13px;
+            font-weight: 500;
+            color: #878787;
+            margin: 20px 1px;
+        }
+
+        .btn {
+            height: 50px;
+            background-color: #fb641b;
+            border-radius: 2px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+            box-shadow: 0px 0px 1px;
+            cursor: pointer;
+        }
+
+        .last {
+            margin: 250px 100px;
+        }
+
+        .anch1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="parent" id="parent">
+        <header class="head" id="head1">
+            <div class="inner" id="inner1">
+                <h4 class="fk1">Flipkart</h4>
+                <p class="title ep" id="ep">Explore </p>
+                <p class="title ep" id="ep1">plus </p>
+
+            </div>
+            <div class="inner" id="inner2">
+                <input class="search" type="search" placeholder="Search for products,brands and more">
+                <input class="icon" type="image" src="./download.png">
+            </div>
+            <div class="inner" id="inner3">
+                <h4 class="title" id="login">Login</h4>
+            </div>
+            <div class="inner" id="inner4">
+                <h4 class="fk">Become a Seller</h4>
+            </div>
+            <div class="inner" id="inner5">
+                <h4 class="fk">More</h4>
+            </div>
+            <div class="inner" id="inner6">
+                <img class="im"
+                    src="https://cdn4.vectorstock.com/i/1000x1000/11/33/cart-shopping-icon-on-blue-background-flat-design-vector-24371133.jpg"
+                    alt="">
+                <h4 class="fk" id="cart">
+                    Cart
+                </h4>
+            </div>
+        </header>
+        <header class="head" id="head2">
+            <select name="" id="" class="dropd" id="drop">
+                <option value="" disabled selected id="drop">Electronics</option>
+                <option value="">MI</option>
+                <option value="">OPPO</option>
+                <option value="">APPLE</option>
+            </select>
+            <select name="" id="" class="dropd">
+                <option value="" disabled selected>TVs&Appliances</option>
+                <option value="">TATA</option>
+                <option value="">D2H</option>
+                <option value="">FRIDGE</option>
+            </select>
+            <select name="" id="" class="dropd">
+                <option value="" disabled selected>Men</option>
+                <option value="">SHOES</option>
+                <option value="">SUITS</option>
+                <option value="">WATCH</option>
+            </select>
+            <select name="" id="" class="dropd">
+                <option value="" disabled selected>Women</option>
+                <option value="">WESTERN</option>
+                <option value="">SAREE</option>
+                <option value="">JEANS</option>
+            </select>
+            <select name="" id="" class="dropd">
+                <option value="" disabled selected>Baby&Kids</option>
+                <option value="">toy</option>
+                <option value="">SHIRTS</option>
+                <option value="">PANTS</option>
+            </select>
+            <select name="" id="" class="dropd">
+                <option value="" disabled selected>Home&Furniture</option>
+                <option value="">FLOWERS</option>
+                <option value="">CURTENS</option>
+                <option value="">SHEETS</option>
+            </select>
+            <select name="" id="" class="dropd">
+                <option value="" disabled selected>Sports,Book&More</option>
+                <option value="">BAT</option>
+                <option value="">BALL</option>
+                <option value="">TENNIS</option>
+            </select>
+            <p class="title1 dropd">Flights</p>
+            <p class="title1 dropd">OfferZone</p>
+        </header>
+
+        <section class="mid" id="mid">
+            <main class="main" id="main">
+                <div class="sub" id="sub1">
+                    <div class="insub">
+                        <span class="log col">Login</span>
+                        <p class="txt col">Get access to your Orders, Wishlist and Recommendations</p>
+                        <img class="img"
+                            src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="sub" id="sub2">
+                    <div class="insub2">
+                        <form action="">
+                            <input type="text" autofocus class="input input1" placeholder="Enter Email/Mobile number">
+                            <section class="sub2txt">
+                                By continuing, you agree to Flipkart's
+                                <a href="#" class="anch">Terms of Use </a>
+                                and
+                                <a href="#" class="anch">Privacy Policy.</a>
+                            </section>
+                            <input type="button" class="input btn" value="Request OTP">
+                        </form>
+                        <div class="input last">
+                            <a href="" class=" anch anch1">New to Flipkart? Create an account</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+    </main>
+</body>
+
+</html>
