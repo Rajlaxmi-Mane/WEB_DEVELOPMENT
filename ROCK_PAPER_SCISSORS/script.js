@@ -26,7 +26,7 @@ const showWinner=(userWin,userChoice,compChoice)=>{
     if (userWin) {
         console.log("you Win");
 
-        // updating the msg container
+        // updating the msg container and provided unique color
         msg.innerText=`You win ! your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor="green";
 
@@ -59,6 +59,7 @@ const playGame = (userChoice) => {
         let userWin=true;
         if (userChoice==="rock") {
             //compchoices =scissors, paper
+
             userWin=compChoice==="paper"?false:true;
         }
         else if(userChoice==="paper"){
