@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSLATE</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .parent{
+            height: 400px;
+            width: 500px;
+            margin: 50px auto;
+            box-shadow: 1px 2px 15px white;
+            display: flex;
+        }
+        .child{
+            height: 400px;
+            width: 250px;
+            border: 1px solid;
+            box-shadow: 1px 2px 15px red;
+            box-sizing: border-box;
+        }
+        #child1{
+            transform: translate(350px,200px);
+        }
+        #child2{
+            transform: translate(-350px,200px);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child" id="child1"></div>
+        <div class="child" id="child2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION_TRANSLATE</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            border-radius: 50%;
+            position: relative;
+            animation-name: roller;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        #box1{
+            background-color:rgb(17, 243, 243);
+            left: 500px;
+        }
+        #box3{
+           background-color: hotpink; 
+           z-index: -1;
+           left: 700px;
+        }
+        .box2{
+             height: 400px;
+             width: 300px;
+             border: none;
+             border-radius: 10px;
+             margin-left: 500px;
+             position: absolute;
+             background-color: rgba(255,255,255,0);
+             color: white;
+        }
+        .box2:hover{
+            box-shadow: 0px 0px 10px,0px 0px 20px,0px 0px 30px,0px 0px 40px,0px 0px 50px,0px 0px 60px;
+        }
+        input{
+            border-radius: 30px;
+            width: 250px;
+            height: 40px;
+            margin: 25px 25px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            box-shadow: 0px 0px 15px red;
+            background-color: transparent;
+            color: white;
+            text-align: center;
+        }
+        input::placeholder{
+            color: white;
+            text-align: center;
+        }
+        @keyframes roller {
+            from{
+                transform: translateY(20px);
+            }
+            to{
+                transform: translateY(330px);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box2" id="box2">
+        <form action="">
+            <input type="text" name="" id="" placeholder="USERNAME">
+            <input type="text" name="" id="" placeholder="PASSWORD">
+            <input type="submit" name="" id="" value="SUBMIT">
+            <input type="reset" name="" id="" value="RESET">
+        </form>
+    </div>
+    <div class="box" id="box3"></div>
+</body>
+</html>

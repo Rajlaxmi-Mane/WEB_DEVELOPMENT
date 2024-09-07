@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT_REGISTRATION_FORM</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            position: relative;
+            left: 35%;
+            color: rgb(158, 6, 6);
+            margin-bottom: 5px;
+        }
+
+        #sub {
+            background-color: green;
+            color: aliceblue;
+            height: 30px;
+            width: 100px;
+        }
+
+        #check {
+            margin-left: 50px;
+        }
+
+        .input {
+            width: 400px;
+            height: 25px;
+            margin-left: 50px;
+        }
+
+        #add {
+            height: 100px;
+            width: 400px;
+            margin-left: 50px;
+        }
+
+        fieldset {
+            width: 650px;
+            background-color: rgb(236, 231, 231);
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h3><u>STUDENT REGISTRATION FORM</u></h3>
+    <fieldset class="color">
+        <br>
+        <table>
+            <form action="">
+                <tr>
+                    <td><label for="fname">FIRST NAME</label></td>
+                    <td><input class="input" type="text" name="" id="fname"></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">LAST NAME</label></td>
+                    <td><input class="input" type="text" name="" id="lname"></td>
+                </tr>
+                <tr>
+                    <td><label for="">EMAIL</label></td>
+                    <td><input class="input" type="email" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">MOBILE</label></td>
+                    <td><input class="input" type="tel" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><br><label for="">GENDER</label></td>
+                    <td><br><input id="check" type="radio" name="gen" id="">
+                        <label for="">MALE</label>
+                        <input type="radio" name="gen" id="">
+                        <label for="">FEMALE</label>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="">DATE OF BIRTH</label></td>
+                    <td><br><input class="input" type="date" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">ADDRESS</label></td>
+                    <td><input id="add" type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">CITY</label></td>
+                    <td><input class="input" type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">AREA PIN</label></td>
+                    <td><input class="input" type="number" name="" pattern="[0-9]{6}" size="6"></td>
+                </tr>
+                <tr>
+                    <td><label for="">STATE</label></td>
+                    <td><input class="input" type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">QUALIFICATION</label></td>
+                    <td><select name="" id="check">
+                            <option value="" disabled selected>SELECT QUALIFICATION</option>
+                            <option value="">BTECH</option>
+                            <option value="">MTECH</option>
+                            <option value="">ME</option>
+                            <option value="">BE</option>
+                            <option value="">DIPLOMA</option>
+                            <option value="">BCOM</option>
+                            <option value="">BCS</option>
+                            <option value="">MCS</option>
+                            <option value="">MCA</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="">SPECIALIZATION</label>
+                    </td>
+                    <td>
+                        <br>
+                        <input id="check" type="checkbox" name="" id="">
+                        <label for="">COMPUTER SCIENCE</label>
+                        <br>
+                        <input id="check" type="checkbox" name="" id="">
+                        <label for="">INFORMATION TECHNOLOGY</label>
+                        <br>
+                        <input id="check" type="checkbox" name="" id="">
+                        <label for="">COMPUTER ARCHITECTURE</label>
+                        <br>
+                        <input id="check" type="checkbox" name="" id="">
+                        <label for="">TELE COMMUNICATION</label>
+                        <br>
+                        <input id="check" type="checkbox" name="" id="">
+                        <label for="">SOFTWARE ENGINEER</label>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><br><label for="">PASSWORD</label></td>
+                    <td><br><input class="input" type="password" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><br>
+                        <input id="sub" type="submit" value="REGISTER"></td>
+                    <!--<td></td>-->
+                </tr>
+            </form>
+
+        </table>
+
+    </fieldset>
+</body>
+
+</html>
