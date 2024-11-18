@@ -1,0 +1,103 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    height:100vh;
+    background-image:url("./Image/living-room-concept-black-color-with-furniture-highlighted-purpple_7023-2638.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow:scroll;
+    flex-direction:column;
+    scrollbar-width:none;
+}
+
+.main{
+    height:400px;
+    width:250px;
+    border:none;
+    border-radius:5px;
+    align-items;center;
+    flex-direction:column;
+    box-shadow:0px 1px 2px black,0px 2px 5px white,0px 4px 9px white;
+}
+
+.main:hover{
+    box-shadow:0px 1px 2px black,0px 2px 5px white,0px 4px 9px purple,0px 0px 15px purple;
+
+}
+
+.left{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;;
+    justify-items:center;
+}
+img{
+    height:80px;
+    width:220px;
+    margin:15px 0px;
+    border-radius:10px;
+    box-shadow:0px 0px 4px white;
+}
+.hide{
+    display:none;
+}
+button{
+    font-size:14px;
+    font-weight:bold;
+    padding:6px;
+    border:none;
+    background-color: rgba(255, 2555, 255, 0.1);
+    color:red;
+    border-radius:6px;
+    box-shadow:0px 0px 2px white,0px 0px 4px white,0px 0px 6px white;
+    margin:10px;
+    cursor:pointer;
+}
+button:hover{
+    box-shadow:0px 1px 1px black,0px 1px 3px white,0px 1px 5px purple;
+
+}
+.para{
+    color:#F58F7C;
+    font-weight:bold;
+    margin:0px 0px 15px 55px;
+}
+
+.head{
+    font-weight:bold;
+    background-clip:text;
+    text-shadow: 0px 0px 4px white,0px 0px 8px white,0px 0px 12px white;
+    margin-bottom:10px;
+}
+.conn{
+    color:#F58F7C;
+    margin-left:10px;
+}
+.topHead{
+    text-align:center;
+    color:white;
+    text-shadow:0px 0px 8px purple,0px 0px 12px white;
+}
+.range{
+    color:white;
+    margin-top:15px;
+    accent-color:#D3D3D3;
+}
+.video{
+    height:80px;
+    width:220px;
+    margin:15px 0px;
+    border-radius:10px;
+    box-shadow:0px 0px 4px white; 
+    object-fit:cover;   
+}
+.glow{
+    box-shadow: 0px 0px 2px gray,0px 0px 5px white,0px 0px 10px white,0px 0px 15px white,0px 0px 20px white,0px 0px 25px white;
+}
+.lightOf{
+    box-shadow:0px 1px 2px black,0px 2px 5px white,0px 4px 9px white;
+}
